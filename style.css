@@ -1,0 +1,98 @@
+/*CSS default reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Irish Grover', cursive; */
+  color: var(--white-clr);
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Avoid text overflows*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+/*
+#232931
+#393E46
+#4ECCA3
+#EEEEEE
+*/
+
+/*CSS Custom variables*/
+:root {
+  --sidebar-clr: #393E46;
+  --white-clr: #EEEEEE;
+  --second-clr-plt: #4ECCA3;
+}
+
+#main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#main-container div {
+  flex: 1 0 auto;
+}
+
+#main-container > div {
+  background: var(--sidebar-clr);
+  flex: 1 1 1%;
+  padding: 1.3rem;
+}
+
+#main-container > div + div {
+  background-color: #232931;
+  flex: 3 1 auto;
+}
+
+#main-container > div + div + div {
+  background-color: var(--sidebar-clr);
+  flex: 1 1 8%;
+}
+
+#main-container > div h1 > span {
+  color: #4ECCA3;
+  font-family: 'Irish Grover', cursive;
+}
+
+/*giving a gap between the links*/
+#main-container > div > div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+/*setting display flex for the menu links*/
+#main-container > div > div ul li{
+  display: flex;
+  flex-direction: row;
+  gap: 0.7em;
+  align-items: center;
+}

@@ -37,13 +37,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*
-#232931
-#393E46
-#4ECCA3
-#EEEEEE
-*/
-
 /*CSS Custom variables*/
 :root {
   --sidebar-clr: #393E46;
@@ -65,7 +58,7 @@ p, h1, h2, h3, h4, h5, h6 {
 #main-container > div {
   background: var(--sidebar-clr);
   flex: 1 1 1%;
-  padding: 1.3rem;
+  padding: 2rem;
 }
 
 #main-container > div + div {
@@ -87,7 +80,7 @@ p, h1, h2, h3, h4, h5, h6 {
 #main-container > div > div ul {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 /*setting display flex for the menu links*/
 #main-container > div > div ul li{
@@ -95,4 +88,12 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   gap: 0.7em;
   align-items: center;
+}
+
+.menu-text.links {
+  color: rgba(152, 152, 152, 1);
+}
+
+#main-container > div .menu-links > p {
+  margin: 2.5rem 0 1rem 0;
 }

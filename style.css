@@ -115,6 +115,17 @@ p, h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+/*Stylin Profile Content*/
+#main-container > div:nth-child(3) > div {
+  display: flex;
+}
+
+#main-container > div:nth-child(3) > div > div {
+  display: flex;
+  margin-left: 5rem;
+  gap: 0.8rem;
+  align-items: center;
+}
 
 
 

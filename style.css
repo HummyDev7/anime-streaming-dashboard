@@ -59,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #main-container > div {
   background: var(--sidebar-clr);
-  flex: 1 1 1%;
+  flex: 1 1 auto;
   padding: 2rem;
 }
 
@@ -70,7 +70,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #main-container > div + div + div {
   background-color: var(--sidebar-clr);
-  flex: 1 1 8%;
+  flex: 1 1 auto;
 }
 
 #main-container > div h1 > span {
@@ -175,5 +175,50 @@ button[data-cmore-btn] {
   background-color: var(--second-clr-plt);
   font: inherit;  
   margin: 0.5rem 0 0.8rem 0;
+}
+
+#main-container .main-content > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form[class = "search-bar"] {
+  width: 60%;
+  background-color: rgba(57, 62, 72, 0.5);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+input[name = "search-bar"] {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding-left: 1.1rem;
+  padding-right: 1.2rem;
+  font-size: 0.8rem;
+  color: var(--white-clr);
+}
+
+input[name = "search-bar"]:focus::placeholder {
+  color: transparent;
+}
+
+[data-search-bar] {
+  border-radius: 50%;
+  border: none;
+  background-color: var(--black-clr-text);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+
+
+[data-search-bar] > img {
+  position: relative;
+  top: 0.2em;
 }
 

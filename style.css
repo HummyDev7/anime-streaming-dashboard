@@ -228,7 +228,7 @@ input[name = "search-bar"]:focus::placeholder {
 
 #main-container .main-content div:nth-child(2) {
   display: grid;
-  grid-template: 2.7rem 21.2rem 2rem 12rem 2rem 12rem / 730px;
+  grid-template: 2.7rem 21.2rem 2.5rem 13rem 2.5rem 12rem / 730px;
 }
 
 #main-container .main-content div:nth-child(2) .main-image .main-img {
@@ -267,15 +267,21 @@ input[name = "search-bar"]:focus::placeholder {
 }
 
 
-#main-container .main-content div:nth-child(2) .popular-scroller {
+#main-container .main-content div:nth-child(2) .scroller {
   display: grid;
-  grid-template: 190px / repeat(6, 200px);
-  overflow-y: scroll;
+  grid-template: 190px / repeat(6, 185px);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 0 0.5em 0 0.5em;
 }
 
-img[data-popular] {
-  width: 11em;
-  height: 11em;
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+img[data-popular-newest] {
+  width: 10em;
+  height: 10em;
   border-radius: 0.7em;
 }
 
